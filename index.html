@@ -115,7 +115,7 @@
         <div class="col-12">
             <div class="form-check">
             <label class="form-check-label" for="copyAddress">Shipping address is same as builling address.</label>
-            <input id="copyAddress" type="checkbox" class="form-check-input">
+            <input id="copy" type="checkbox" class="form-check-input" onclick="hide('div1')">
             </div>
         </div>
         <div class="col-12">
@@ -127,6 +127,7 @@
 
         <hr class="my-4">
         <h4 class="mb-3">Shipping Adress</h4>
+        <div id="div1" >
         <div class="col-12">
             <label for="address" class="form-label">Address</label>
             <div class="input-group">
@@ -160,7 +161,7 @@
             <input id="index" type="nubber" class="form-control"  placeholder="ex. 11101" required>
             <div class="invalid-feedback">Index is Requred!</div>
         </div>
-
+    </div>
         <hr class="my-4">
         <h4 class="mb-3">Payments</h4>
             <div class="form-check">
@@ -239,6 +240,12 @@
       });
     }, false);
   })();
-    </script>
+
+//function to hide Shipping Address Section if user click on checkbox
+function hide (div1) {
+    document.getElementById(div1).style.display = "none";
+}
+
+</script>
   </body>
 </html>
