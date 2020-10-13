@@ -127,6 +127,42 @@
         </div>
 
         <hr class="my-4">
+        <h4 class="mb-3">Shipping Adress</h4>
+        <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <div class="input-group">
+            <input id="address" type="text" class="form-control" placeholder="12-34 Time St" required>
+            <div class="invalid-feedback">Adress is Requred!</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="address2" class="form-label">Address 2 (Optional)</label>
+            <div class="input-group">
+            <input id="address2" type="text" class="form-control" placeholder="Apt or Suite">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="country" class="form-label">Country</label>
+            <select id="country" type="text" class="form-control">
+            <option value="">Choose a Country ...</option>
+            <option value="USA">USA</option></select>
+            <div class="invalid-feedback">Country is Requred!</div>
+        </div>
+            <div class="col-md-3">
+            <label for="state" class="form-label">Country</label>
+            <select id="state" type="text" class="form-control">
+            <option value="">Choose a State ...</option>
+            <option value="NY">NY</option>
+            <option value="NJ">NJ</option></select>
+            <div class="invalid-feedback">State is Requred!</div>
+        </div>
+            <div class="col-md-3">
+            <label for="index" class="form-label">Index</label>
+            <input id="index" type="nubber" class="form-control"  placeholder="ex. 11101" required>
+            <div class="invalid-feedback">Index is Requred!</div>
+        </div>
+
+        <hr class="my-4">
         <h4 class="mb-3">Payments</h4>
             <div class="form-check">
             <input id="paypal" name="payment" type="radio" class="form-check-input" checked required>
