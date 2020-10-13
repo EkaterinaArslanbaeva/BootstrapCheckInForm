@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
   </head>
 
-  <body>
+  <body style="min-height:6000px">
       <div class="container pt-3">
           <div class="py-5 text-center">
               <!--class="mb-4 block mx-auto"  make sure that logo stuck to center with same margens-->
@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="container p-3 my-3 bg-primary text-white">
+    <div class="container p-3 my-3 border">
         <h4>Billing Adress</h4>
         <div class="row g-2">
         <div class="col-12">
@@ -62,21 +62,72 @@
             <option value="">Choose a Country ...</option>
             <option value="USA">USA</option></select>
             <div class="invalid-feedback">Country is Requred!</div>
-            </div>
+        </div>
             <div class="col-md-3">
-                <label for="state" class="form-label">Country</label>
-                <select id="state" type="text" class="form-control">
-                <option value="">Choose a State ...</option>
-                <option value="NY">NY</option>
-                <option value="NJ">NJ</option></select>
-                <div class="invalid-feedback">State is Requred!</div>
+            <label for="state" class="form-label">Country</label>
+            <select id="state" type="text" class="form-control">
+            <option value="">Choose a State ...</option>
+            <option value="NY">NY</option>
+            <option value="NJ">NJ</option></select>
+            <div class="invalid-feedback">State is Requred!</div>
+        </div>
+            <div class="col-md-3">
+            <label for="index" class="form-label">Index</label>
+            <input id="index" type="nubber" class="form-control"  placeholder="ex. 11101" required>
+            <div class="invalid-feedback">Index is Requred!</div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+            <label class="form-check-label" for="copyAddress">Shipping address is same as builling address.</label>
+            <input id="copyAddress" type="checkbox" class="form-check-input">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+            <label class="form-check-label" for="info">Save this information.</label>
+            <input id="info" type="checkbox" class="form-check-input">
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <h4 class="mb-3">Payments</h4>
+            <div class="form-check">
+            <input id="paypal" name="payment" type="radio" class="form-check-input" checked required>
+            <label for="paypal">Paypal</label>
+            </div>
+            <div class="form-check">
+            <input id="creditCard" name="payment"  type="radio" class="form-check-input" required>
+            <label for="creditCard">Credit Card</label>
+            </div>
+            <div class="form-check">
+            <input id="debitCard" name="payment" type="radio" class="form-check-input" required>
+            <label for="debitCard">Debit Card</label>
+            </div>
+
+            <div class="row my-3 gy-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name on Card</label>
+                    <input id="name" type="text" class="form-control" placeholder="Enter a full name of card holder (same as provided on card)" required>
+                    <div class="invalid-feedback">Name on Card is Requred to Provide for Payment!</div>
                 </div>
-                <div class="col-md-3">
-                    <label for="index" class="form-label">Index</label>
-                    <input id="index" type="nubber" class="form-control"  placeholder="ex. 11101" required>
-                    <div class="invalid-feedback">Index is Requred!</div>
-                    </div>
+                <div class="col-md-6">
+                    <label for="number" class="form-label">Card Number</label>
+                    <input id="number" type="text" class="form-control" required>
+                    <div class="invalid-feedback">Card Number is Requred to Provide for Payment!</div>
                 </div>
+                <div class="col-md-2">
+                    <label for="exp" class="form-label">Expiration</label>
+                    <input id="exp" type="text" class="form-control" placeholder="ex. 09/2022" required>
+                    <div class="invalid-feedback">Card Expiration Date is Requred!</div>
+                </div>
+                <div class="col-md-2">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input id="cvv" type="text" class="form-control" placeholder="ex. 123" required>
+                    <div class="invalid-feedback">Card CVV Number is Requred!</div>
+                </div>
+            </div>
+
+        </div>
         </div>
         
     </div>
