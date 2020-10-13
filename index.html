@@ -26,13 +26,62 @@
     <div class="container p-3 my-3 bg-primary text-white">
         <h4>Billing Adress</h4>
         <div class="row g-2">
+        <div class="col-12">
             <label for="firstName" class="form-label">First Name</label>
             <input id="firstName" type="text" class="form-control"  required>
+            <div class="invalid-feedback">Valid First Name is Requred!</div>
         </div>
-        <div class="row g-2">
+        <div class="col-12">
             <label for="lastName" class="form-label">Last Name</label>
             <input id="lastName" type="text" class="form-control"  required>
+            <div class="invalid-feedback">Valid Last Name is Requred!</div>
         </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-group">
+            <input id="email" type="text" class="form-control" placeholder="myemail@gmail.com" required>
+            <div class="invalid-feedback">Email is Requred!</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <div class="input-group">
+            <input id="address" type="text" class="form-control" placeholder="2222 Live St" required>
+            <div class="invalid-feedback">Adress is Requred!</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="address2" class="form-label">Address 2 (Optional)</label>
+            <div class="input-group">
+            <input id="address2" type="text" class="form-control" placeholder="Apt or Suite">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="country" class="form-label">Country</label>
+            <select id="country" type="text" class="form-control">
+            <option value="">Choose a Country ...</option>
+            <option value="USA">USA</option></select>
+            <div class="invalid-feedback">Country is Requred!</div>
+            </div>
+            <div class="col-md-3">
+                <label for="state" class="form-label">Country</label>
+                <select id="state" type="text" class="form-control">
+                <option value="">Choose a State ...</option>
+                <option value="NY">NY</option>
+                <option value="NJ">NJ</option></select>
+                <div class="invalid-feedback">State is Requred!</div>
+                </div>
+                <div class="col-md-3">
+                    <label for="index" class="form-label">Index</label>
+                    <input id="index" type="nubber" class="form-control"  placeholder="ex. 11101" required>
+                    <div class="invalid-feedback">Index is Requred!</div>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
+    </div>
     </div>
     
 
